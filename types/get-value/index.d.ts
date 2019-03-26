@@ -8,6 +8,7 @@ export = get;
 
 declare function get<T>(obj: T): T;
 declare function get(obj: object, key: string, options?: get.Options): any;
+declare function get(obj: object, key: string[], options?: get.Options): any;
 
 declare namespace get {
     interface Options {
